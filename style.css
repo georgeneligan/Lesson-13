@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --seconday-font: "Cormorant Garamond", serif;
+  --primary-color: #8ea698;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--primary-font);
+}
+
+main {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+main .left .wrapper {
+  width: 82%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 100px;
+}
+
+main .left nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .left nav aside a {
+  font-size: 19px;
+  font-weight: 300;
+  font-family: var(--seconday-font);
+  color: black;
+  text-decoration: none;
+}
+
+main .left nav aside ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  gap: 20px;
+  list-style: none;
+}
+
+main .left nav aside ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+
+main .right {
+  position: fixed;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  place-items: center;
+}
+
+main .right .top {
+  height: 80px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main .right .top button {
+  width: 157px;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  border: 0px;
+  background-color: black;
+}
+
+main .right .bottom {
+  display: grid;
+  place-items: center;
+}
+
+main .right .bottom img {
+  width: max-content;
+  height: max-content;
+  object-fit: contain;
+}
+
+main .left .wrapper .info {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .left .wrapper .info .top h1 {
+  font-size: 85px;
+  font-weight: 500;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+}
+
+main .left .wrapper .info .top h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+  margin: 0px;
+}
+
+main .left .wrapper .info .middle {
+  display: grid;
+  place-items: left;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+main .left .wrapper .info .middle p {
+  font-size: 15px;
+  color: black;
+  font-weight: 400;
+  margin: 0px;
+}
+
+main .left .wrapper .info .middle p span {
+  font-weight: 700;
+}
+
+main .left .wrapper .info .middle ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+main .left .wrapper .info .middle ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+
+main .left .wrapper .info .middle ul li span {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+main .left .wrapper .info .bottom {
+  width: 50%;
+}
+
+main .left .wrapper .info .bottom a {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+main .left .wrapper .about {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  width: 80%;
+  margin: 30% auto;
+}
+
+main .left .wrapper .about .top {
+  display: flex;
+  align-items: center;
+}
+
+main .left .wrapper .about .top h4 {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+  letter-spacing: 0.4em;
+}
+
+main .left .wrapper .about .top div {
+  width: 80%;
+  border-bottom: solid 1px black;
+}
+
+main .left .wrapper .about article {
+  margin: 0;
+  display: flex;
+  width: 85%;
+}
+
+main .left .wrapper .about article p {
+  display: flex;
+  margin: 0;
+  line-height: 2;
+  font-size: 15px;
+}
+
+main .left .wrapper .skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  width: 80%;
+  margin: 30% auto;
+}
+
+main .left .wrapper .skills .top {
+  display: flex;
+  align-items: center;
+}
+
+main .left .wrapper .skills .top h4 {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+  letter-spacing: 0.4em;
+}
+
+main .left .wrapper .skills .top div {
+  width: 12%;
+  border-bottom: solid 1px black;
+}
+
+main .left .wrapper .skills .bottom {
+  display: grid;
+  place-items: left;
+  width: 100%;
+  line-height: 2;
+}
+
+main .left .wrapper .skills .bottom ul {
+  padding: 0;
+}
+
+main .left .wrapper .experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  margin: 30% auto;
+  width: 80%;
+}
+
+main .left .wrapper .experience .top h4 {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+  letter-spacing: 0.4em;
+}
+
+main .left .wrapper .experience .top {
+  display: flex;
+  align-items: center;
+}
+
+main .left .wrapper .experience .top div {
+  width: 19%;
+  border-bottom: solid 1px black;
+}
+
+main .left .wrapper .experience .bottom {
+  display: grid;
+  width: 80%;
+  row-gap: 30px;
+}
+
+main .left .wrapper .experience .bottom article h5 {
+  font-size: 15px;
+}
+
+main .left .wrapper .education {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  margin: 30% auto;
+  width: 80%;
+}
+
+main .left .wrapper .education .top h4 {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+  letter-spacing: 0.4em;
+}
+
+main .left .wrapper .education .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .left .wrapper .education .top div {
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+
+main .left .wrapper .education .bottom {
+  display: grid;
+  width: 80%;
+  row-gap: 30px;
+}
+
+main .left .wrapper .education .bottom article h5 {
+  font-size: 15px;
+}
+
+main .left .wrapper .achievements {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  margin: 30% auto;
+  width: 80%;
+}
+
+main .left .wrapper .achievements .top {
+  display: flex;
+
+  align-items: center;
+}
+
+main .left .wrapper .achievements .top h4 {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+  letter-spacing: 0.4em;
+}
+
+main .left .wrapper .achievements .top div {
+  width: 12%;
+  border-bottom: solid 1px black;
+}
+
+main .left .wrapper .achievements .bottom {
+  width: 75%;
+  line-height: 2;
+}
+
+main .left .wrapper .achievements .bottom ul {
+  padding: 0;
+}
+
+main .left .wrapper .contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 30%;
+}
+
+main .left .wrapper .contact .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .left .wrapper .contact .top h4 {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--seconday-font);
+  color: black;
+  margin: 0px;
+  letter-spacing: 0.4em;
+}
+
+main .left .wrapper .contact .top div {
+  width: 120%;
+  border-bottom: solid 1px black;
+}
+
+main .left .wrapper .contact p {
+  font-size: 15px;
+  color: black;
+  font-weight: 400;
+  margin: 0px;
+}
+
+main .left .wrapper .contact p span {
+  font-weight: 700;
+}
+
+main .left .wrapper .contact ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  row-gap: 10px;
+}
+
+main .left .wrapper .contact ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+
+main .left .wrapper .contact ul li span {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+main .left .wrapper .contact .bottom {
+  width: 80%;
+  display: grid;
+  row-gap: 10px;
+}
+
+main footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+main footer p {
+  font-size: 15px;
+  font-family: var(--seconday-font);
+}
+main footer a {
+  color: black;
+}
